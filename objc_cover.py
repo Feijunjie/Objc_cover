@@ -57,7 +57,7 @@ def implemented_methods(path):
     returns {'sel1':[sig1, sig2], 'sel2':[sig3]}
     """
     
-    re_sig_sel_ios = re.compile("\s*imp 0x\w+ ([+|-]\[.+\s(.+)\])")
+    re_sig_sel_ios = re.compile("\s*imp\s*0x\w+ ([+|-]\[.+\s(.+)\])")
     re_sig_sel_mac = re.compile("\s*imp ([+|-]\[.+\s(.+)\])")
     
     impl = {} # sel -> clsmtd
